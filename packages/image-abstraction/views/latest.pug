@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Image Search
+    meta(name='description' content='Image data')
+    link#favicon(rel='icon' href='https://i.chzbgr.com/full/9035428096/h882D54CB/' type='image/x-icon')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=devide-width, initial-scale=1')
+    link(rel='stylesheet' href='/style.css')
+    
+  body.center-column-around
+    h1.center Recent Searches
+    each entry in search
+      -let when = entry.when.toDateString() + " at " + entry.when.toLocaleTimeString();
+      -let arr = ["Someone felt like Googling ", "Someone felt it pressing to look at images of ", "A human person put in the effort and keystrokes to search for pics of "]
+      -let sarcasm = arr[Math.floor(Math.random()*3)]
+      div.borders
+        div.urls
+          |On #{when}
+          br
+          |#{sarcasm} "#{entry.term}"
+        div.image
+          img(src=entry.url alt=entry.term height="175px")

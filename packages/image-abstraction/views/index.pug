@@ -1,0 +1,29 @@
+html(lang="en")
+  head
+    title Image Abstraction Layer
+    meta(name="description" content="Information from an image search")
+    link(id="favicon" rel="icon" href="https://i.chzbgr.com/full/9035428096/h882D54CB/" type="image/x-icon")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+    link(rel="stylesheet" href="/style.css")
+    script(src="/client.js" defer)
+  body.center-column-around
+    div#recent-searches
+    div.card
+      div.card-header.text-center Search for an Image!
+      div.card-body
+        form#image-search(class="" action="" method="get")
+          div.form-group
+            input.text-center.form-control#keyword
+        form#latest(action="/latest/imagesearch" method="get")
+           div.form-group
+            button.btn.btn-primary(type="submit") Or See What Other People
+              br 
+              | Are Searching For
+              
+    script(src="https://code.jquery.com/jquery-2.2.1.min.js" 
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" 
+            crossorigin="anonymous")
+    script(src='client.js')

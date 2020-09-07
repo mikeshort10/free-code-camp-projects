@@ -1,0 +1,16 @@
+{
+  "name": "fcc-library",
+  "version": "0.0.1",
+  "description": "boilerplate",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --ui tdd tests/2_functional-tests.js"
+  },
+  "keywords": [
+    "node",
+    "hyperdev",
+    "express"
+  ],
+  "license": "MIT"
+}
