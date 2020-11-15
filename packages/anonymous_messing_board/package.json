@@ -15,5 +15,8 @@
     "hyperdev",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
 }
